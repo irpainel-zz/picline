@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF35D40A17188167000D7ABE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35D40917188167000D7ABE /* UIKit.framework */; };
+		AF35D40C17188167000D7ABE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35D40B17188167000D7ABE /* Foundation.framework */; };
+		AF35D40E17188167000D7ABE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35D40D17188167000D7ABE /* CoreGraphics.framework */; };
+		AF35D41017188167000D7ABE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35D40F17188167000D7ABE /* CoreData.framework */; };
+		AF35D41617188167000D7ABE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF35D41417188167000D7ABE /* InfoPlist.strings */; };
+		AF35D41817188167000D7ABE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF35D41717188167000D7ABE /* main.m */; };
+		AF35D41C17188167000D7ABE /* piclineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF35D41B17188167000D7ABE /* piclineAppDelegate.m */; };
+		AF35D41F17188168000D7ABE /* PicLine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF35D41D17188168000D7ABE /* PicLine.xcdatamodeld */; };
+		AF35D42217188168000D7ABE /* piclineMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF35D42117188168000D7ABE /* piclineMasterViewController.m */; };
+		AF35D42817188168000D7ABE /* piclineMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF35D42617188168000D7ABE /* piclineMasterViewController.xib */; };
+		AF35D43617188203000D7ABE /* piclineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF35D43417188203000D7ABE /* piclineViewController.m */; };
+		AF35D43717188203000D7ABE /* piclineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF35D43517188203000D7ABE /* piclineViewController.xib */; };
+		AF35D43A17188307000D7ABE /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = AF35D43917188307000D7ABE /* Line.m */; };
+		AF5FBB25171DD2E500F5EC5E /* lineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB24171DD2E500F5EC5E /* lineCell.xib */; };
+		AF5FBB35171DD3D500F5EC5E /* BackImage.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB2A171DD3D500F5EC5E /* BackImage.png */; };
+		AF5FBB36171DD3D500F5EC5E /* buttonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB2B171DD3D500F5EC5E /* buttonBack.png */; };
+		AF5FBB37171DD3D500F5EC5E /* buttonBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB2C171DD3D500F5EC5E /* buttonBack@2x.png */; };
+		AF5FBB38171DD3D500F5EC5E /* buttonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB2D171DD3D500F5EC5E /* buttonNormal.png */; };
+		AF5FBB39171DD3D500F5EC5E /* buttonNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB2E171DD3D500F5EC5E /* buttonNormal@2x.png */; };
+		AF5FBB3A171DD3D500F5EC5E /* ImageBG.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB2F171DD3D500F5EC5E /* ImageBG.png */; };
+		AF5FBB3B171DD3D500F5EC5E /* ImageFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB30171DD3D500F5EC5E /* ImageFrame.png */; };
+		AF5FBB3C171DD3D500F5EC5E /* navbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB31171DD3D500F5EC5E /* navbar_bg.png */; };
+		AF5FBB3D171DD3D500F5EC5E /* navbar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB32171DD3D500F5EC5E /* navbar_bg@2x.png */; };
+		AF5FBB3E171DD3D500F5EC5E /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB33171DD3D500F5EC5E /* navBar.png */; };
+		AF5FBB3F171DD3D500F5EC5E /* navBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB34171DD3D500F5EC5E /* navBar@2x.png */; };
+		AF5FBB43171DD3DF00F5EC5E /* bgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB40171DD3DF00F5EC5E /* bgImage.png */; };
+		AF5FBB44171DD3DF00F5EC5E /* imageCaption.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB41171DD3DF00F5EC5E /* imageCaption.png */; };
+		AF5FBB45171DD3DF00F5EC5E /* TimeLine.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB42171DD3DF00F5EC5E /* TimeLine.png */; };
+		AF5FBB4A171DD46600F5EC5E /* lineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5FBB49171DD46600F5EC5E /* lineCell.m */; };
+		AF5FBB50171DDE2300F5EC5E /* pictureViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5FBB4F171DDE2300F5EC5E /* pictureViewCell.xib */; };
+		AF5FBB53171DDE9800F5EC5E /* pictureViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5FBB52171DDE9800F5EC5E /* pictureViewCell.m */; };
+		AF5FBB57171DE2E300F5EC5E /* UINavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5FBB56171DE2E300F5EC5E /* UINavigationBar.m */; };
+		AF696171172720FA000EB6A8 /* ny1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF696170172720FA000EB6A8 /* ny1.jpg */; };
+		AF7715661729AA5900B342B6 /* setDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7715641729AA5900B342B6 /* setDetailsViewController.m */; };
+		AF7715671729AA5900B342B6 /* setDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7715651729AA5900B342B6 /* setDetailsViewController.xib */; };
+		AF7E8C7117206C5A00DD3EC5 /* Toolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7E8C7017206C5A00DD3EC5 /* Toolbar.m */; };
+		AFD950061729A5430078BB56 /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD950051729A5430078BB56 /* ImageStore.m */; };
+		AFDE079B1726FB1F009B28DF /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDE079A1726FB1F009B28DF /* Picture.m */; };
+		AFDE07AD17270254009B28DF /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDE07A617270254009B28DF /* 0.png */; };
+		AFDE07AE17270254009B28DF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDE07A717270254009B28DF /* 1.png */; };
+		AFDE07AF17270254009B28DF /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDE07A817270254009B28DF /* 2.png */; };
+		AFDE07B017270254009B28DF /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDE07A917270254009B28DF /* 3.png */; };
+		AFDE07B117270254009B28DF /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDE07AA17270254009B28DF /* 4.png */; };
+		AFDE07B217270254009B28DF /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDE07AB17270254009B28DF /* 5.png */; };
+		AFDE07B317270254009B28DF /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDE07AC17270254009B28DF /* 6.png */; };
+		AFDE07BB172704F9009B28DF /* takePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDE07B9172704F8009B28DF /* takePictureViewController.m */; };
+		AFDE07BC172704F9009B28DF /* takePictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDE07BA172704F9009B28DF /* takePictureViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF35D40517188167000D7ABE /* PicLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF35D40917188167000D7ABE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AF35D40B17188167000D7ABE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF35D40D17188167000D7ABE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AF35D40F17188167000D7ABE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AF35D41317188167000D7ABE /* PicLine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PicLine-Info.plist"; sourceTree = "<group>"; };
+		AF35D41517188167000D7ABE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF35D41717188167000D7ABE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF35D41917188167000D7ABE /* PicLine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PicLine-Prefix.pch"; sourceTree = "<group>"; };
+		AF35D41A17188167000D7ABE /* piclineAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = piclineAppDelegate.h; sourceTree = "<group>"; };
+		AF35D41B17188167000D7ABE /* piclineAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = piclineAppDelegate.m; sourceTree = "<group>"; };
+		AF35D41E17188168000D7ABE /* PicLine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PicLine.xcdatamodel; sourceTree = "<group>"; };
+		AF35D42017188168000D7ABE /* piclineMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = piclineMasterViewController.h; sourceTree = "<group>"; };
+		AF35D42117188168000D7ABE /* piclineMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = piclineMasterViewController.m; sourceTree = "<group>"; };
+		AF35D42717188168000D7ABE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/piclineMasterViewController.xib; sourceTree = "<group>"; };
+		AF35D43317188203000D7ABE /* piclineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = piclineViewController.h; sourceTree = "<group>"; };
+		AF35D43417188203000D7ABE /* piclineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = piclineViewController.m; sourceTree = "<group>"; };
+		AF35D43517188203000D7ABE /* piclineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = piclineViewController.xib; sourceTree = "<group>"; };
+		AF35D43817188307000D7ABE /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		AF35D43917188307000D7ABE /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		AF5FBB24171DD2E500F5EC5E /* lineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = lineCell.xib; path = PicLine/lineCell.xib; sourceTree = "<group>"; };
+		AF5FBB2A171DD3D500F5EC5E /* BackImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackImage.png; path = PicLine/images/BackImage.png; sourceTree = "<group>"; };
+		AF5FBB2B171DD3D500F5EC5E /* buttonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonBack.png; path = PicLine/images/buttonBack.png; sourceTree = "<group>"; };
+		AF5FBB2C171DD3D500F5EC5E /* buttonBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonBack@2x.png"; path = "PicLine/images/buttonBack@2x.png"; sourceTree = "<group>"; };
+		AF5FBB2D171DD3D500F5EC5E /* buttonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonNormal.png; path = PicLine/images/buttonNormal.png; sourceTree = "<group>"; };
+		AF5FBB2E171DD3D500F5EC5E /* buttonNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonNormal@2x.png"; path = "PicLine/images/buttonNormal@2x.png"; sourceTree = "<group>"; };
+		AF5FBB2F171DD3D500F5EC5E /* ImageBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ImageBG.png; path = PicLine/images/ImageBG.png; sourceTree = "<group>"; };
+		AF5FBB30171DD3D500F5EC5E /* ImageFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ImageFrame.png; path = PicLine/images/ImageFrame.png; sourceTree = "<group>"; };
+		AF5FBB31171DD3D500F5EC5E /* navbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navbar_bg.png; path = PicLine/images/navbar_bg.png; sourceTree = "<group>"; };
+		AF5FBB32171DD3D500F5EC5E /* navbar_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar_bg@2x.png"; path = "PicLine/images/navbar_bg@2x.png"; sourceTree = "<group>"; };
+		AF5FBB33171DD3D500F5EC5E /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navBar.png; path = PicLine/images/navBar.png; sourceTree = "<group>"; };
+		AF5FBB34171DD3D500F5EC5E /* navBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navBar@2x.png"; path = "PicLine/images/navBar@2x.png"; sourceTree = "<group>"; };
+		AF5FBB40171DD3DF00F5EC5E /* bgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgImage.png; path = PicLine/images/timeline/bgImage.png; sourceTree = "<group>"; };
+		AF5FBB41171DD3DF00F5EC5E /* imageCaption.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imageCaption.png; path = PicLine/images/timeline/imageCaption.png; sourceTree = "<group>"; };
+		AF5FBB42171DD3DF00F5EC5E /* TimeLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TimeLine.png; path = PicLine/images/timeline/TimeLine.png; sourceTree = "<group>"; };
+		AF5FBB48171DD46600F5EC5E /* lineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lineCell.h; path = PicLine/lineCell.h; sourceTree = "<group>"; };
+		AF5FBB49171DD46600F5EC5E /* lineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lineCell.m; path = PicLine/lineCell.m; sourceTree = "<group>"; };
+		AF5FBB4F171DDE2300F5EC5E /* pictureViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = pictureViewCell.xib; path = PicLine/pictureViewCell.xib; sourceTree = "<group>"; };
+		AF5FBB51171DDE9800F5EC5E /* pictureViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pictureViewCell.h; path = PicLine/pictureViewCell.h; sourceTree = "<group>"; };
+		AF5FBB52171DDE9800F5EC5E /* pictureViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pictureViewCell.m; path = PicLine/pictureViewCell.m; sourceTree = "<group>"; };
+		AF5FBB56171DE2E300F5EC5E /* UINavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationBar.m; sourceTree = "<group>"; };
+		AF696170172720FA000EB6A8 /* ny1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ny1.jpg; sourceTree = "<group>"; };
+		AF7715631729AA5900B342B6 /* setDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setDetailsViewController.h; sourceTree = "<group>"; };
+		AF7715641729AA5900B342B6 /* setDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setDetailsViewController.m; sourceTree = "<group>"; };
+		AF7715651729AA5900B342B6 /* setDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = setDetailsViewController.xib; sourceTree = "<group>"; };
+		AF7E8C7017206C5A00DD3EC5 /* Toolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toolbar.m; sourceTree = "<group>"; };
+		AFD950041729A5430078BB56 /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStore.h; sourceTree = "<group>"; };
+		AFD950051729A5430078BB56 /* ImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStore.m; sourceTree = "<group>"; };
+		AFDE07991726FB1F009B28DF /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
+		AFDE079A1726FB1F009B28DF /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		AFDE07A617270254009B28DF /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		AFDE07A717270254009B28DF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		AFDE07A817270254009B28DF /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		AFDE07A917270254009B28DF /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		AFDE07AA17270254009B28DF /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		AFDE07AB17270254009B28DF /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		AFDE07AC17270254009B28DF /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		AFDE07B8172704F8009B28DF /* takePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = takePictureViewController.h; sourceTree = "<group>"; };
+		AFDE07B9172704F8009B28DF /* takePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = takePictureViewController.m; sourceTree = "<group>"; };
+		AFDE07BA172704F9009B28DF /* takePictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = takePictureViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF35D40217188167000D7ABE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF35D40A17188167000D7ABE /* UIKit.framework in Frameworks */,
+				AF35D40C17188167000D7ABE /* Foundation.framework in Frameworks */,
+				AF35D40E17188167000D7ABE /* CoreGraphics.framework in Frameworks */,
+				AF35D41017188167000D7ABE /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF35D3FA17188167000D7ABE = {
+			isa = PBXGroup;
+			children = (
+				AF35D41117188167000D7ABE /* PicLine */,
+				AF35D40817188167000D7ABE /* Frameworks */,
+				AF35D40617188167000D7ABE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF35D40617188167000D7ABE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF35D40517188167000D7ABE /* PicLine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF35D40817188167000D7ABE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF35D40917188167000D7ABE /* UIKit.framework */,
+				AF35D40B17188167000D7ABE /* Foundation.framework */,
+				AF35D40D17188167000D7ABE /* CoreGraphics.framework */,
+				AF35D40F17188167000D7ABE /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF35D41117188167000D7ABE /* PicLine */ = {
+			isa = PBXGroup;
+			children = (
+				AFDE07981726F7B3009B28DF /* smiles */,
+				AF5FBB55171DE2CA00F5EC5E /* Application */,
+				AF5FBB54171DE25900F5EC5E /* pictureViewCell */,
+				AF5FBB47171DD45100F5EC5E /* lineCell */,
+				AF5FBB46171DD3E700F5EC5E /* Images */,
+				AF5FBB58171DE2F600F5EC5E /* Controllers */,
+				AF5FBB59171DE30C00F5EC5E /* Xibs */,
+				AF35D43E17188318000D7ABE /* Model */,
+				AF35D41217188167000D7ABE /* Supporting Files */,
+			);
+			path = PicLine;
+			sourceTree = "<group>";
+		};
+		AF35D41217188167000D7ABE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF35D41317188167000D7ABE /* PicLine-Info.plist */,
+				AF35D41417188167000D7ABE /* InfoPlist.strings */,
+				AF35D41717188167000D7ABE /* main.m */,
+				AF35D41917188167000D7ABE /* PicLine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF35D43E17188318000D7ABE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFD950041729A5430078BB56 /* ImageStore.h */,
+				AFD950051729A5430078BB56 /* ImageStore.m */,
+				AF35D41D17188168000D7ABE /* PicLine.xcdatamodeld */,
+				AF35D43817188307000D7ABE /* Line.h */,
+				AF35D43917188307000D7ABE /* Line.m */,
+				AFDE07991726FB1F009B28DF /* Picture.h */,
+				AFDE079A1726FB1F009B28DF /* Picture.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AF5FBB46171DD3E700F5EC5E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AF696170172720FA000EB6A8 /* ny1.jpg */,
+				AF5FBB40171DD3DF00F5EC5E /* bgImage.png */,
+				AF5FBB41171DD3DF00F5EC5E /* imageCaption.png */,
+				AF5FBB42171DD3DF00F5EC5E /* TimeLine.png */,
+				AF5FBB2A171DD3D500F5EC5E /* BackImage.png */,
+				AF5FBB2B171DD3D500F5EC5E /* buttonBack.png */,
+				AF5FBB2C171DD3D500F5EC5E /* buttonBack@2x.png */,
+				AF5FBB2D171DD3D500F5EC5E /* buttonNormal.png */,
+				AF5FBB2E171DD3D500F5EC5E /* buttonNormal@2x.png */,
+				AF5FBB2F171DD3D500F5EC5E /* ImageBG.png */,
+				AF5FBB30171DD3D500F5EC5E /* ImageFrame.png */,
+				AF5FBB31171DD3D500F5EC5E /* navbar_bg.png */,
+				AF5FBB32171DD3D500F5EC5E /* navbar_bg@2x.png */,
+				AF5FBB33171DD3D500F5EC5E /* navBar.png */,
+				AF5FBB34171DD3D500F5EC5E /* navBar@2x.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AF5FBB47171DD45100F5EC5E /* lineCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF5FBB48171DD46600F5EC5E /* lineCell.h */,
+				AF5FBB49171DD46600F5EC5E /* lineCell.m */,
+				AF5FBB24171DD2E500F5EC5E /* lineCell.xib */,
+			);
+			name = lineCell;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AF5FBB54171DE25900F5EC5E /* pictureViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF5FBB4F171DDE2300F5EC5E /* pictureViewCell.xib */,
+				AF5FBB51171DDE9800F5EC5E /* pictureViewCell.h */,
+				AF5FBB52171DDE9800F5EC5E /* pictureViewCell.m */,
+			);
+			name = pictureViewCell;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AF5FBB55171DE2CA00F5EC5E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AF7E8C7017206C5A00DD3EC5 /* Toolbar.m */,
+				AF5FBB56171DE2E300F5EC5E /* UINavigationBar.m */,
+				AF35D41A17188167000D7ABE /* piclineAppDelegate.h */,
+				AF35D41B17188167000D7ABE /* piclineAppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		AF5FBB58171DE2F600F5EC5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF35D42017188168000D7ABE /* piclineMasterViewController.h */,
+				AF35D42117188168000D7ABE /* piclineMasterViewController.m */,
+				AF35D43317188203000D7ABE /* piclineViewController.h */,
+				AF35D43417188203000D7ABE /* piclineViewController.m */,
+				AFDE07B8172704F8009B28DF /* takePictureViewController.h */,
+				AFDE07B9172704F8009B28DF /* takePictureViewController.m */,
+				AF7715631729AA5900B342B6 /* setDetailsViewController.h */,
+				AF7715641729AA5900B342B6 /* setDetailsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AF5FBB59171DE30C00F5EC5E /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				AF7715651729AA5900B342B6 /* setDetailsViewController.xib */,
+				AF35D42617188168000D7ABE /* piclineMasterViewController.xib */,
+				AF35D43517188203000D7ABE /* piclineViewController.xib */,
+				AFDE07BA172704F9009B28DF /* takePictureViewController.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		AFDE07981726F7B3009B28DF /* smiles */ = {
+			isa = PBXGroup;
+			children = (
+				AFDE07A617270254009B28DF /* 0.png */,
+				AFDE07A717270254009B28DF /* 1.png */,
+				AFDE07A817270254009B28DF /* 2.png */,
+				AFDE07A917270254009B28DF /* 3.png */,
+				AFDE07AA17270254009B28DF /* 4.png */,
+				AFDE07AB17270254009B28DF /* 5.png */,
+				AFDE07AC17270254009B28DF /* 6.png */,
+			);
+			name = smiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF35D40417188167000D7ABE /* PicLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF35D42E17188168000D7ABE /* Build configuration list for PBXNativeTarget "PicLine" */;
+			buildPhases = (
+				AF35D40117188167000D7ABE /* Sources */,
+				AF35D40217188167000D7ABE /* Frameworks */,
+				AF35D40317188167000D7ABE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicLine;
+			productName = PicLine;
+			productReference = AF35D40517188167000D7ABE /* PicLine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF35D3FC17188167000D7ABE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = picline;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = Painelli;
+			};
+			buildConfigurationList = AF35D3FF17188167000D7ABE /* Build configuration list for PBXProject "PicLine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AF35D3FA17188167000D7ABE;
+			productRefGroup = AF35D40617188167000D7ABE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF35D40417188167000D7ABE /* PicLine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF35D40317188167000D7ABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF35D41617188167000D7ABE /* InfoPlist.strings in Resources */,
+				AF35D42817188168000D7ABE /* piclineMasterViewController.xib in Resources */,
+				AF35D43717188203000D7ABE /* piclineViewController.xib in Resources */,
+				AF5FBB25171DD2E500F5EC5E /* lineCell.xib in Resources */,
+				AF5FBB35171DD3D500F5EC5E /* BackImage.png in Resources */,
+				AF5FBB36171DD3D500F5EC5E /* buttonBack.png in Resources */,
+				AF5FBB37171DD3D500F5EC5E /* buttonBack@2x.png in Resources */,
+				AF5FBB38171DD3D500F5EC5E /* buttonNormal.png in Resources */,
+				AF5FBB39171DD3D500F5EC5E /* buttonNormal@2x.png in Resources */,
+				AF5FBB3A171DD3D500F5EC5E /* ImageBG.png in Resources */,
+				AF5FBB3B171DD3D500F5EC5E /* ImageFrame.png in Resources */,
+				AF5FBB3C171DD3D500F5EC5E /* navbar_bg.png in Resources */,
+				AF5FBB3D171DD3D500F5EC5E /* navbar_bg@2x.png in Resources */,
+				AF5FBB3E171DD3D500F5EC5E /* navBar.png in Resources */,
+				AF5FBB3F171DD3D500F5EC5E /* navBar@2x.png in Resources */,
+				AF5FBB43171DD3DF00F5EC5E /* bgImage.png in Resources */,
+				AF5FBB44171DD3DF00F5EC5E /* imageCaption.png in Resources */,
+				AF5FBB45171DD3DF00F5EC5E /* TimeLine.png in Resources */,
+				AF5FBB50171DDE2300F5EC5E /* pictureViewCell.xib in Resources */,
+				AFDE07AD17270254009B28DF /* 0.png in Resources */,
+				AFDE07AE17270254009B28DF /* 1.png in Resources */,
+				AFDE07AF17270254009B28DF /* 2.png in Resources */,
+				AFDE07B017270254009B28DF /* 3.png in Resources */,
+				AFDE07B117270254009B28DF /* 4.png in Resources */,
+				AFDE07B217270254009B28DF /* 5.png in Resources */,
+				AFDE07B317270254009B28DF /* 6.png in Resources */,
+				AFDE07BC172704F9009B28DF /* takePictureViewController.xib in Resources */,
+				AF696171172720FA000EB6A8 /* ny1.jpg in Resources */,
+				AF7715671729AA5900B342B6 /* setDetailsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF35D40117188167000D7ABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF35D41817188167000D7ABE /* main.m in Sources */,
+				AF35D41C17188167000D7ABE /* piclineAppDelegate.m in Sources */,
+				AF35D41F17188168000D7ABE /* PicLine.xcdatamodeld in Sources */,
+				AF35D42217188168000D7ABE /* piclineMasterViewController.m in Sources */,
+				AF35D43617188203000D7ABE /* piclineViewController.m in Sources */,
+				AF35D43A17188307000D7ABE /* Line.m in Sources */,
+				AF5FBB4A171DD46600F5EC5E /* lineCell.m in Sources */,
+				AF5FBB53171DDE9800F5EC5E /* pictureViewCell.m in Sources */,
+				AF5FBB57171DE2E300F5EC5E /* UINavigationBar.m in Sources */,
+				AF7E8C7117206C5A00DD3EC5 /* Toolbar.m in Sources */,
+				AFDE079B1726FB1F009B28DF /* Picture.m in Sources */,
+				AFDE07BB172704F9009B28DF /* takePictureViewController.m in Sources */,
+				AFD950061729A5430078BB56 /* ImageStore.m in Sources */,
+				AF7715661729AA5900B342B6 /* setDetailsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF35D41417188167000D7ABE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF35D41517188167000D7ABE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF35D42617188168000D7ABE /* piclineMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF35D42717188168000D7ABE /* en */,
+			);
+			name = piclineMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF35D42C17188168000D7ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AF35D42D17188168000D7ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF35D42F17188168000D7ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PicLine/PicLine-Prefix.pch";
+				INFOPLIST_FILE = "PicLine/PicLine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AF35D43017188168000D7ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PicLine/PicLine-Prefix.pch";
+				INFOPLIST_FILE = "PicLine/PicLine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF35D3FF17188167000D7ABE /* Build configuration list for PBXProject "PicLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF35D42C17188168000D7ABE /* Debug */,
+				AF35D42D17188168000D7ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF35D42E17188168000D7ABE /* Build configuration list for PBXNativeTarget "PicLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF35D42F17188168000D7ABE /* Debug */,
+				AF35D43017188168000D7ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF35D41D17188168000D7ABE /* PicLine.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF35D41E17188168000D7ABE /* PicLine.xcdatamodel */,
+			);
+			currentVersion = AF35D41E17188168000D7ABE /* PicLine.xcdatamodel */;
+			path = PicLine.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AF35D3FC17188167000D7ABE /* Project object */;
+}

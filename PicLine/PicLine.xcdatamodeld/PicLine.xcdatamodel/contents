@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="11G63b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Line" representedClassName="Line">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="piclineId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date">
+            <userInfo/>
+        </attribute>
+        <relationship name="pictures" optional="YES" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Picture" inverseName="lines" inverseEntity="Picture" syncable="YES"/>
+        <userInfo/>
+    </entity>
+    <entity name="Picture" representedClassName="Picture" syncable="YES">
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emoticon" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pictureId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="lines" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Line" inverseName="pictures" inverseEntity="Line" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Line" positionX="261" positionY="189" width="128" height="105"/>
+        <element name="Picture" positionX="160" positionY="192" width="128" height="135"/>
+    </elements>
+</model>
