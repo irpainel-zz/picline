@@ -1,5 +1,5 @@
-PicLine
-=======
+PicLine 1.0
+===========
 
 This application is used to take daily pictures and save them as a timeline.
 It's possible to create multiple timelines to save different subjets.
